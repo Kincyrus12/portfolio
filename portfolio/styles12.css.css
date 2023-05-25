@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #0a497a;
+}
+
+.profile{
+    background-color: darkcyan;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    border-left: 4px solid red;
+    padding:0;
+    margin: 1rem;
+}
+
+span{
+    color: #0060a9;
+}
+
+.contact{
+    border: 1px ;
+    width: 5rem;
+    border-radius: 5px;
+    background-color: rgb(140, 136, 136);
+    height: fit-content;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact i{
+    margin: .7rem;
+}
+.contact i:hover{
+    cursor: pointer;
+}
+.dashboard{
+    margin:7rem 0 2rem  3rem;
+    border:1px solid white;
+    width: 95vw;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+    background: beige;
+    border-radius: 10px;
+}
+
+.href{
+    color: #06a7df;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 23px;
+}
+
+.p{
+    color: black; 
+    font-size: 18px;
+}
+
+.welcome1{
+    font-size: 32px;
+    color: #06a7df;
+    font-weight: 400;
+    font-family: Open Sans;
+}
+
+.layout{
+    border: 1px solid rgb(255, 249, 249);
+    width: 85vw;
+    background-color: rgb(199, 197, 197);
+    position: relative;
+    left: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report12{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.report{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    align-items: center;
+    padding: 1rem 0;
+}
+.report12 i{
+    font-size: 55px;
+    border-right: 3px solid gray;
+    margin-right: 1rem;
+}
+
+.report i{
+    font-size: 55px;
+    border-right: 3px solid gray;
+    margin-right: 1rem;
+}
+
+.report p{
+    margin-right: 1rem;
+}
+
+.button1{
+    padding: .7rem;
+    width: 13rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: darkgoldenrod;
+    border: darkgoldenrod;
+    border-radius: 5px;
+    color: white;
+}
+
+button{
+    padding: .7rem;
+    width: 13rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: #06A7DE;
+    border: #06A7DE;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover{
+    scale: 1.1;
+}
+
+.dash1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5rem;
+}
+.check{
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid darkgoldenrod;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkgoldenrod;
+}
+
+.background{
+    color: #06A7DE;
+    font-size: 22px;
+}
+
+.you{
+    position: relative;
+    height: 20rem;
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px  gray;
+    background: #f2f0ec;
+}
+.you1{
+    color: #06A7DE;
+    font-size: 22px;
+}
+
+.report1{
+    position: relative;
+    height: 20rem;
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px  gray;
+    background: #f2f0ec;
+}
+
+/*responsiveness*/
+
+@media(max-width:1050px){
+    .button1{
+        width: auto;
+    }
+
+    button{
+        width: auto;
+    }
+    .background{
+        font-size: 18px;
+    }
+
+    .you1{
+        color: #06A7DE;
+        font-size: 18px;
+    }
+
+    .dashboard{
+        margin:7rem 0 2.3rem  2rem;
+    }
+    
+}
+
+@media(max-width:991px){
+
+}
+
+@media(max-width:864px){
+    .layout{
+        display: block;
+        width: 79vw;
+    }
+    .dashboard{
+        width: 95vw auto;
+        margin-left:  1rem;
+        margin-right: 1rem;
+    }
+
+    @media(max-width:768px){
+        .dashboard{
+            width: auto;
+            margin-left:  1rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media(max-width:415px){
+
+    .report12{
+        position: relative;
+        right: 5rem;
+    }
+    .check{
+        position: relative;
+        right: 3rem;
+    }
+    .layout{
+        width: 19rem auto;
+    }
+    .you{
+        width: auto;
+    }
+
+    .dashboard{
+        width: 25rem auto;
+        margin-left:  1rem;
+        margin-right: 1rem;
+    }
+
+}
+   
