@@ -4,80 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <link rel="stylesheet" href="styles12.css.css">
+    <title>Responsive personal portfolio website</title>
+
+    <!----box icons-->
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!---custom css-->
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="profile">
-        
-        <div class="logo">PROFILE <br><span>ADVANTAGE</span></div>
 
+    <!---header design-->
 
+    <header class="header">
+        <a href="#" class="logo">Portfo<span style="color:
+        red">lio</span></a>
 
-        <div class="contact">
-            <i class='bx bxs-user'></i>
-            <i class='bx bx-dots-vertical'></i>
-        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            
+
+        </nav>
+
     </header>
 
-    <section class="dashboard">
+    <!---home section-->
 
-        
-            <div class="welcome">
-                <p class="welcome1">Dear User, welcome to your profile dashboard</p>
-                <br>
-                <p class="p">*The screening process typically takes an average of 5 - 10 business day(s), but note it could take longer depending on the items selected for screening. Unless First Advantage reaches out to you for any additional information, there is nothing more to do until you hear back from the company requesting the screening.</p>
-                <a href="#" class="href">Screening process details</a>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Cyrus <span class="last-name" style="color: red
+            ;">Yegon</span></h1>
+            <h3><span class="multiple-text"></span></h3>
+            <p>With a passion in Development, i have gained so much experience in the past 3 and a half years working in different projects.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="imgs/Screenshot_20230514_015833_Gallery.jpg" alt="">
+        </div>
+    </section>
+
+<!---about section-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="imgs/Screenshot_20221224_174545_Gallery.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Developer</h3>
+        <p>Front-End Developer with a proven
+            ability to collaborate effectively with
+            senior developers while spending
+            extra time to be mentored. Enjoy
+            working closely with team members
+            to ensure workloads are effectively
+            redirected to bottlenecks and
+            personally picking up the slack when
+            necessary. Ready to apply my passion for
+            coding to a talented engineering
+            team to develop quality solutions.</p>
+        <a href="#" class="btn">Read More</a>
+
+    </div>
+</section>
+
+<!---services section design-->
+
+<section class="services" id="services">
+    <h2 class="heading">My <span>Sservices</span></h2>
+
+    <div class="services-container">
+        <div class="service-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3> 
+            <p>Collaborating with designers, back-end developers, and stakeholders.Creating responsive designs.Ensuring accessibility. Testing and debugging.
+                Creating responsive websites according to the customers needs </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <i class='bx bxs-paint'></i>
+            <h3>Designer</h3> 
+            <p>Design and layout websites
+                Think through the navigation of a site to provide the best user experience
+                Design sample pages and create mockups
+                Work in Adobe programs to create visuals, graphics, or animations
+                Register web domains</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>UI/UX</h3> 
+            <p>Conducting user research.Designing user interfaces.
+                Collaborating with cross-functional teams.  Analyzing metrics. Presenting designs to stakeholders. Keeping up with design trends</p>
+             <a href="#" class="btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+<!----skills section-->
+
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+   
+        <div class="skills1">
+            <div class="languages">
+                <h1>HTML</h1>
+                <img src="imgs/html.jpeg" alt="">
+            </div>
+            <div class="languages">
+                <h1>JavaScript</h1>
+                <img src="imgs/js.jpeg" alt="">
+            </div>
+            <div class="languages">
+                <h1>CSS</h1>
+                <img src="imgs/css2.jpeg" alt="">
+            </div>
+            <div class="languages">
+                <h1>Next js</h1>
+                <img src="imgs/next js.jpeg" alt="">
+            </div>
+            <div class="languages">
+                <h1>Tailwind css</h1>
+                <img src="imgs/tailwindcss.jpeg" alt="">
+            </div>
+            <div class="languages">
+                <h1>Node js</h1>
+                <img src="imgs/node js.jpeg" alt="">
             </div>
     
-            <div class="layout">
-                <div class="you">
-                    <div class="dash1">
-                            <div class="report12">
-                                <i class='bx bxs-user-account'></i>
-                                <p>YOU</p>
-                                
-                            </div>
-                            <div class="check">
-                                <i class='bx bx-check'></i>
-                            </div>
-                    </div>
-                    
-        
-                        <div class="you1">YOUR PROFILE DATA</div>
-                        <p>0 review <span style="color: darkgoldenrod;">No actions pending from you at this time</p>
-                
-                        <button class="button1">
-                          <a href="index1.html" style="text-decoration: none;color: azure;">VIEW SUMMARY</a>
-                        </button>
-                </div>
-
-                <div class="report1">
-                    <div class="report">
-                        <i class='bx bxs-report'></i>
-                        <p>REPORT</p>
-            
-                    </div>
-                
-        
-                <div class="background" >BACKGROUND SCREENING REPORT</div>
-                <p>0 review <span style="color: darkgoldenrod;">Ready For Company Review</span> <br> 0 review In Progress</p>
-        
-                <button>VIEW SUMMARY</button>
-
-                </div>
         </div>
-       
-
-
-
-        
-
-    </section>
     
+    
+</section>
 
+<!---portfolio section-->
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="imgs/3239444.webp" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Builded an Advantage profile clone site for UI  where customers can see their background check information and can update their info.</p>
+                <a href="https://frontend-mentorchallengeqr.netlify.app"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="imgs/time.management.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis nam pariatur cum ab illo molestias incidunt dicta alias, sit officiis asperiores velit natus quas rerum, necessitatibus minima nobis tempore.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="imgs/wal2.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis nam pariatur cum ab illo molestias incidunt dicta alias, sit officiis asperiores velit natus quas rerum, necessitatibus minima nobis tempore.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="imgs/me.jpeg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis nam pariatur cum ab illo molestias incidunt dicta alias, sit officiis asperiores velit natus quas rerum, necessitatibus minima nobis tempore.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="imgs/OIP (1).jpeg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis nam pariatur cum ab illo molestias incidunt dicta alias, sit officiis asperiores velit natus quas rerum, necessitatibus minima nobis tempore.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="imgs/online-shopping-concept.webp" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis nam pariatur cum ab illo molestias incidunt dicta alias, sit officiis asperiores velit natus quas rerum, necessitatibus minima nobis tempore.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!----contact design-->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+
+    </form>
+
+</section>
+
+<!----footer design-->
+
+<footer class="footer">
+    <div class="c">
+        <p>CopyRight &copy; 2023 By Cyrus All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+</footer>
+
+<!----scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!----typed js-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-----scroll button starts here -->
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+<!-----scroll button ends here -->
+
+<!----custome js-->
+    <script src="script.js"></script>
+<body>
     
 </body>
 </html>

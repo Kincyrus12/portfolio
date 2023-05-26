@@ -227,7 +227,6 @@ span{
     text-align: center;
     border: .2rem solid var(--bg--color);
     transition: .5s ease;
-    height: 30rem;
 
 }
 
@@ -251,6 +250,8 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+
 
 /*skills section starts here*/
 .skills{
@@ -461,9 +462,7 @@ span{
 
 /*------breakpoint---*/
 
-@media(max-width:1px){
 
-}
 
 @media(max-width:1200px){
     html{
@@ -611,12 +610,12 @@ span{
 
     .home-img img{
         height: 48vh;
-        width: 25vh;
+        
         border-radius: 50%;
     }
     .about-img img{
-        height: 43vh;
-        width: 20vh;
+        height: 50rem;
+        width: 100%;
         border-radius: 50%;
     }
 
@@ -644,3 +643,33 @@ span{
         margin-top: 2rem;
     }
 }
+
+
+
+/* scroll to the top arrow starts here*/
+.to-top{
+    background:#f9004d;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events:none;
+    transition: all .4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events:auto;
+    opacity: 1;
+}
+
+/* scroll to the top arrow ends here*/
